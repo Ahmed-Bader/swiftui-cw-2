@@ -7,6 +7,9 @@
 import SwiftUI
 
 struct Exercise1: View {
+    @State var name = ""
+    @State var water = 0
+    
     var body: some View {
         ZStack {
             Image("charter")
@@ -20,7 +23,15 @@ struct Exercise1: View {
                     .fontWeight(.black)
                 
 //                ADD THE CODE HERE
-                
+                TextField("your name here", text: $name)
+                Stepper("كم بطلاً من الماء تتعهد ان تشرب؟", value: $water, in: 0...20)
+                Spacer()
+                Text("أتعهد أنا")
+                Text("\(name)")
+                Text("أن اشرب")
+                Text("\(water)")
+                Text("من أكواب الماء يومياً \n والله على ما أقول شهيد")
+                    .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer()        
             }.padding()
