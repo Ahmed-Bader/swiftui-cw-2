@@ -30,7 +30,7 @@ struct Exercise1: View {
                 Text("\(name)")
                 Text("أن اشرب")
                 Text("\(water)")
-                Text("من أكواب الماء يومياً \n والله على ما أقول شهيد")
+                Text("من أكواب الماء يومياً \n والله على ما اقول شهيد")
                     .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer()        
