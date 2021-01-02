@@ -34,7 +34,7 @@ struct Exercise1: View {
                     .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer()        
-            }.padding()
+            }.padding(.horizontal, 80.0)
         }
     }
 }
